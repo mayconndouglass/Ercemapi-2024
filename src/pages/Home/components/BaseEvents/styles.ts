@@ -39,25 +39,6 @@ export const Container = styled.section`
     }
   }
 
-  .testing {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-
-    @media screen and (max-width: 760px) {
-      justify-content: center;
-      flex-wrap: wrap;
-
-      & > div { 
-        padding: 1.5rem 1rem; 
-
-        img {
-          width: 100px;
-        }
-      }
-    }
-  }
-
   @media screen and (max-width: 700px) {
     padding: 0 2.5rem 7.5rem;
   }

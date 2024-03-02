@@ -1,30 +1,23 @@
-import { About } from "./components/About"
-import { EventSchedule } from "./components/EventSchdule"
 import { BaseEvents } from "./components/BaseEvents"
 import { Footer } from "./components/Footer"
-// import { Presentation2 } from "./components/Presentation2"
 import { Header } from "./components/Header"
-// import { Presentation } from "./components/Presentation"
 import { Signin } from "./components/Signin"
 import { Supporters } from "./components/Supporters"
 import { SatelliteEvents } from "./components/SatelliteEvents"
 import { VideoSection } from "./components/VIdeoSection"
-import { Main } from "./components/Main"
-// import { Separator } from "./components/Separator"
+import { Hero } from "./components/Hero"
+import { About } from "./components/About"
 
 export const Home = () => {
   return (
     <>
       <Header />
       <main>
-        <Main />
-        {/* <Separator /> */}
-        {/* <Presentation2 /> */}
-        <EventSchedule />
+        <Hero />
         <About />
-        <Signin />
         <BaseEvents />
         <SatelliteEvents />
+        <Signin />
         <VideoSection />
         <Supporters />
       </main>

@@ -13,7 +13,7 @@ export const Signin = () => {
 
           <AnimatedButton
             $background="white"
-            title="INSCREVA-SE"
+            title="SEJA UM VOLUNTÁRIO"
             $padding={{ vertical: 0.5, horizontal: 1 }}
             color='#023E61'
           />

@@ -4,32 +4,30 @@ export const Container = styled.section`
   padding: 0 2.5rem 7.5rem;
   
   & > div {
-    margin-bottom: 5rem;
-    
-    img {
-      width: 120px;
-      /* height: 180px; */
-      object-fit: contain;
-    }
-
     h2 {
-      margin: 5rem 0;
+      margin-bottom: 5rem;
     }
 
     .holding {
+      margin-bottom: 5rem;
+
       img {
         display: block;
         margin: 0 auto;
         width: 90px;
       }
     }
+
     .organizations {
       display: flex;
       justify-content: center;
       gap: 8rem;
 
-      & > img:nth-child(2) {
-        width: 90px;
+      margin-bottom: 5rem;
+
+      img {
+        width: 100%;
+        object-fit: contain;
       }
     }
 

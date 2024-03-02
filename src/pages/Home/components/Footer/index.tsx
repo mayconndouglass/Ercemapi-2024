@@ -1,41 +1,57 @@
-import * as S from "./styles"
+import * as S from './styles'
+import { Center } from '../../../../components/Center'
 
-import { Center } from "../../../../components/Center"
-import { AnimatedIcon } from "../../../../components/AnimatedIcon"
-
-import { IoLogoInstagram } from "react-icons/io5"
 import logos from "../../../../assets/logos2.png"
+import { FaInstagram } from "react-icons/fa"
+import { MdOutlineEmail } from "react-icons/md"
+import { SlArrowRight } from "react-icons/sl"
 
 export const Footer = () => {
   return (
     <S.Container>
       <Center>
-        <div className="principal-information">
-          <div className="footer-first-col">
-            <h5>Enucompi 2024</h5>
-            <p>Redes Sociais:</p>
-            <AnimatedIcon icon={<IoLogoInstagram />} color="white" />
+        <div className="first-row">
+          <div className="logos">
+            <img src={logos} alt="Ecermapi Enucompi SBC" />
           </div>
 
-          <div className="footer-second-col">
-            <h5>Nos Contate</h5>
-            <p>contato@enucompi.com</p>
-            <p>Universidade Federal do Delta do Parnaíba</p>
-            <p>Av. São Sebastião, 2819 - Nossa Sra. de Fátima</p>
+          <div className="contact">
+            <div className="insta">
+              <a href=" https://instagram.com/ercemapi2024.enucompi" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+                /ercemapi2024.enucompi
+              </a>
+            </div>
+
+            <div className="email">
+              <MdOutlineEmail />
+              contato@enucompi.com
+            </div>
           </div>
 
-          <div className="footer-third-col">
-            <h5>Menu</h5>
+          <div className="menu">
             <ul>
-              <a href="#"><li>Inicio</li></a>
-              <a href="#"><li>Programação</li></a>
-              <a href="#"><li>Eventos</li></a>
-              <a href="#"><li>Sobre</li></a>
-            </ul>
-          </div>
+              <li>
+                <SlArrowRight />
+                <a href="#">
+                  Página inicial
+                </a>
+              </li>
 
-          <div className="footer-fourth-col">
-            <img src={logos} alt="Sbc Enucompi Ercemapi" />
+              <li>
+                <SlArrowRight />
+                <a href="#">
+                  Programação
+                </a>
+              </li>
+
+              <li>
+                <SlArrowRight />
+                <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+                  Conheça a SBC
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -47,6 +63,7 @@ export const Footer = () => {
           <p>Desenvolvido por Maycon Douglas</p>
         </div>
       </Center>
+      <div className="yellow"></div>
     </S.Container>
   )
 }

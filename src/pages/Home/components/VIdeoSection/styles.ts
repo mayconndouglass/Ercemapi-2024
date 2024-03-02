@@ -19,7 +19,6 @@ export const Container = styled.section<{ $openModal: boolean }>`
     overflow: hidden;
     cursor: pointer;
 
-    margin-bottom: 80px;
     position: relative;
 
     iframe, img {

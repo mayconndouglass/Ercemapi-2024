@@ -7,8 +7,7 @@ import { Title } from '../../../../components/Title'
 import { IoClose } from "react-icons/io5"
 import { MdOutlinePlayCircle } from "react-icons/md";
 
-import parnaiba1 from "../../../../assets/parnaiba.jpg"
-import parnaiba2 from "../../../../assets/parnaiba2.jpg"
+import parnaiba from "../../../../assets/parnaiba2.jpg"
 
 export const VideoSection = () => {
   const [openModal, setopenModal] = useState<boolean>(false)
@@ -25,29 +24,15 @@ export const VideoSection = () => {
     <S.Container $openModal={openModal}>
       <Center>
         <Title align='center' text='Conheça Parnaíba' $color='#023E61' />
-
-        <div className="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/nGAvx0WwLL0?si=Llp0d_dP7lOPGbZr" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </div>
-
         <Title align='left' text='Conheça Parnaíba' $color='#023E61' />
-        <div
-          className="video-container"
-          onClick={() => setopenModal(true)}
-        >
-
-          <img src={parnaiba1} alt="Parnaíba" />
-          <MdOutlinePlayCircle />
-        </div>
 
         <div
           className="video-container"
           onClick={() => setopenModal(true)}
         >
-          <img src={parnaiba2} alt="Parnaíba" />
+          <img src={parnaiba} alt="Parnaíba" />
           <MdOutlinePlayCircle />
         </div>
-
 
         <div className="modal-video" onClick={(event) => handleOutSideModal(event)}>
           {openModal && (
@@ -55,7 +40,6 @@ export const VideoSection = () => {
               <span onClick={() => setopenModal(false)}>
                 <IoClose />
               </span>
-              {/* <h2>Maycon Douglas</h2> */}
               <iframe
                 width="560"
                 height="315"

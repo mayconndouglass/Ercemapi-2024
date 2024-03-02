@@ -4,7 +4,7 @@ export const Container = styled.section`
   margin-bottom: 7.5rem;
   padding: 2.5rem 5rem;
   
-  background-image: linear-gradient( to right, #0052A1 0, #0052A1 80%, white 20% );
+ background-color: #0052A1;
 
   & > div {
     padding-block: 2.5rem;//5rem;

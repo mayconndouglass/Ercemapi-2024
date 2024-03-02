@@ -6,15 +6,17 @@ export const defaultTheme = {
   'blue-600': '#023E61',
   'blue-400': '#0052A1',
 
+  'pink-400': '#FFB510',
   'pink-600': '#ff497c',
+
+  'yellow-primary': '#FCBA03',
   'yellow-300': '#ffdc60',
   'yellow-400': '#ffa800',
+
   'gray-100': '#f9f3f0',
   'gray-500': '#777777',
   'gray-900': '#292930',
 
-  // 'blue-600': '#0d6efd',
-  // 'blue-400': '#3577F0',
   'slate-50': '#F6F7FB',
   'slate-300': '#d6d6d6',
 
