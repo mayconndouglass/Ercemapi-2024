@@ -1,18 +1,21 @@
 import * as S from './styles'
+
 import { Center } from '../../../../components/Center'
 
-import logos from "../../../../assets/logos2.png"
 import { FaInstagram } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
 import { SlArrowRight } from "react-icons/sl"
 
+import logo from "../../../../assets/ercemapi-logo-white.png"
+
 export const Footer = () => {
+  //TODO: Mudar a linkagem para o topo da tela quando adicionar o react router dom
   return (
     <S.Container>
       <Center>
         <div className="first-row">
           <div className="logos">
-            <img src={logos} alt="Ecermapi Enucompi SBC" />
+            <img src={logo} alt="Ecermapi" />
           </div>
 
           <div className="contact">
@@ -25,7 +28,7 @@ export const Footer = () => {
 
             <div className="email">
               <MdOutlineEmail />
-              contato@enucompi.com
+              contato@enucompi.com.br
             </div>
           </div>
 
@@ -33,9 +36,14 @@ export const Footer = () => {
             <ul>
               <li>
                 <SlArrowRight />
-                <a href="#">
+                <div onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth',
+                  })
+                }}>
                   Página inicial
-                </a>
+                </div>
               </li>
 
               <li>

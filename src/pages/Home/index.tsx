@@ -15,9 +15,9 @@ export const Home = () => {
       <main>
         <Hero />
         <About />
+        <Signin />
         <BaseEvents />
         <SatelliteEvents />
-        <Signin />
         <VideoSection />
         <Supporters />
       </main>

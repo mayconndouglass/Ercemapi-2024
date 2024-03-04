@@ -17,7 +17,7 @@ export const Hero = () => {
           color='white'
         />
       </Center>
-      <span></span>
+      {/* <span></span> */}
     </S.Container>
   )
 }

@@ -4,7 +4,7 @@ export const Container = styled.footer`
   background-color: ${({ theme }) => theme["blue-400"]};
   
   & > div {
-    padding: 3rem 5rem 0;
+    padding: 4rem 5rem 0;
 
     @media screen and (max-width: 700px) {
       padding: 3rem 2.5rem 0;
@@ -36,9 +36,17 @@ export const Container = styled.footer`
 
       .logos {
         width: 280px;
+        width: 300px;
+        margin-top: -22px;
 
         @media screen and (max-width: 900px) {
-          width: 200px;
+          width: 250px;//200px;
+          margin-top: -15px;
+        }
+
+        @media screen and (max-width: 812px) {
+          width: 200px;//200px;
+          margin-top: -12px;
         }
 
         img {
@@ -84,7 +92,7 @@ export const Container = styled.footer`
               font-size: 13px;
             }
 
-            a {
+            a, div {
               position: relative;
               left: 0;
               transition: ease-in-out .1s;
@@ -94,6 +102,10 @@ export const Container = styled.footer`
                 left: .5rem;
                 transition: ease-in-out .1s;
               }
+            }
+
+            div {
+              cursor: pointer;
             }
           }
         }

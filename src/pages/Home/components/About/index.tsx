@@ -5,13 +5,15 @@ import ufdpar from "../../../../assets/ufdpar2.png"
 
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCalendarAlt } from "react-icons/fa"
+import { Title } from "../../../../components/Title"
 
 export const About = () => {
   return (
     <S.Container>
       <Center>
         <div className="content">
-          <h3>SOBRE A ERCEMAPI</h3>
+          <Title align="left" text="Sobre a ERCEMAPI" />
+          {/* <h3>SOBRE A ERCEMAPI</h3> */}
 
           <p>As Escolas Regionais são eventos promovidos pela <span>Sociedade Brasileira de Computação (SBC)</span> voltados aos estudantes de graduação e pós-graduação cujo objetivo principal é aproximar e facilitar a presença dos estudantes em eventos da área de computação. <span>A Escola Regional de Computação Ceará, Maranhão, Piauí (ERCEMAPI)</span> tem a importante missão de ser uma representação na promoção da ciência e pesquisa na área da Computação dentro da região Nordeste. Paralelamente, como um evento satélite, teremos a realização do <span>XVI Encontro Unificado de Computação do Piauí (ENUCOMPI)</span>.</p>
 
@@ -28,7 +30,7 @@ export const About = () => {
                   <span><FaCalendarAlt /></span>
                   <p>LOCAL DO EVENTO</p>
                 </div>
-                <p>Universidade Federal<br /> Do Piauí</p>
+                <p>Universidade Federal<br /> do Delta da Parnaíba</p>
               </div>
 
               <div className="event-data">

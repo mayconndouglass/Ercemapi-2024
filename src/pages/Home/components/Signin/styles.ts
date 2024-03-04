@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.section`
   margin-bottom: 7.5rem;
-  padding: 2.5rem 5rem;
+  padding: 5rem 5rem;
   
  background-color: #0052A1;
 

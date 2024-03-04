@@ -33,7 +33,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
       width: 150px;//200px;
     }
 
-    & > img:last-child {
+    & > a img:last-child {
       width: 40px;//50px;
     }
 
@@ -162,7 +162,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
             a {
               position: relative;
               font-size: 15px;
-              text-transform: capitalize;
+              /* text-transform: capitalize; */
               color: ${({ theme }) => theme['gray-900']};
               font-weight: 500;
               padding: 5px 15px;
@@ -332,7 +332,7 @@ export const SideBar = styled.div<{
             text-decoration: none;
             position: relative;
             font-size: 1rem;
-            text-transform: capitalize;
+            /* text-transform: capitalize; */
             color: ${props => props.theme['gray-500']};
             font-weight: ${props => props.theme['font-w-bold']};
             padding: 0.3125rem 0;

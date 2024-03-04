@@ -14,7 +14,7 @@ export const Container = styled.section`
   object-fit: cover;
   /* background-color: ${({ theme }) => theme["blue-400"]}; */
   /* position: relative; */
-  height: 108vh;
+  height: 100vh;
   margin-bottom: 10rem;
   position: relative;
 

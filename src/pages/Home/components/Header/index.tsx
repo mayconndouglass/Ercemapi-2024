@@ -20,10 +20,12 @@ export const Header = () => {
   return (
     <S.Container $menuIsOpen={isOpen}>
       <Center>
-        <div className="logos">
+        <div className="logos" id="top">
           <img src={ercemapi} alt="Ercemapi" />
           <img src={enucompi} alt="Enucompi" />
-          <img src={sbc} alt="SBC" />
+          <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+            <img src={sbc} alt="SBC" />
+          </a>
         </div>
 
         <nav className="main-nav">

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import image from "../../assets/card-background1.avif"
 
 export const Container = styled.div`
   display: inline-block;
@@ -8,14 +9,21 @@ export const Container = styled.div`
   position: relative;
   color: ${({ theme }) => theme["blue-600"]};
   font-size: 1.125rem;
-
-  background-color: white;
+  background-image: none;
+  
+  
   margin-bottom: 1.875rem;
   border-radius: 6px;
-  transition: all .3s ease-in-out;
+  transition:  all ease 0.7s;
+  background-color: white;
 
   width: 250px;
   text-align: center;
+
+  h5 {
+    position: relative;
+    z-index: 1;
+  }
 
   svg {
     display: block;
@@ -34,6 +42,22 @@ export const Container = styled.div`
     width: 60px;
     height: 40px;
     fill: ${({ theme }) => theme["blue-600"]};
+    transition:  all ease 0.5s;
+
+    opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0  ;
+    opacity: 0;
+    visibility: hidden;
+    background-color: ${({ theme }) => theme["blue-400"]};
   }
 
   &::before {
@@ -58,12 +82,32 @@ export const Container = styled.div`
 
   &:hover {
     box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.1);
+    background-image: url(${image});
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all ease 0.3s;
+    color: white;
+    background-color: none;
+
+
+    svg {
+      /* top: -40px; */
+      transition:  all ease 0.5s;
+      transform: translateY(-10px);
+      opacity: 0;
+    }
   }
 
   &:hover::before {
     visibility: visible;
     opacity: 1;
     bottom: -12px;
+  }
+
+  &:hover::after {
+    visibility: visible;
+    opacity: 0.8;
+    transition:  all ease 0.5s;
   }
 
   @media screen and (max-width: 900px) {

@@ -9,7 +9,7 @@ export const Signin = () => {
       <Center>
         <div className="content">
           <p>Faça sua inscrição como</p>
-          <p>Voluntário para o ERCEMAPI 2024!</p>
+          <p>Voluntário(a) para a ERCEMAPI 2024!</p>
 
           <AnimatedButton
             $background="white"

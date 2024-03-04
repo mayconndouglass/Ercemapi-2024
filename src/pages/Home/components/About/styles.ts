@@ -34,6 +34,10 @@ export const Container = styled.section`
         padding-bottom: 0.5rem;
       }
 
+      h2 {
+        margin-bottom: 2.5rem;
+      }
+
       p {
         /* color: ${({ theme }) => theme["blue-600"]}; */
         color: #042471;
@@ -57,7 +61,7 @@ export const Container = styled.section`
 
     .image {
       width: 50%;
-      margin-top: 3rem;
+      margin-top: 6.3rem;//3rem;
 
       @media screen and (max-width: 950px) {
         width: 100%;

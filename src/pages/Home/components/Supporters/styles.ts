@@ -35,7 +35,7 @@ export const Container = styled.section`
       img {
         display: block;
         margin: 0 auto;
-        width: 200px;
+        width: 250px;//200px;
       }
     }
 

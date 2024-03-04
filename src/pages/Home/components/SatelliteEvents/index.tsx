@@ -10,7 +10,7 @@ export const SatelliteEvents = () => {
   return (
     <S.Container>
       <Center>
-        <Title text="Eventos Satélite" align="center" $color="white" />
+        <Title text="Eventos Satélite" align="left" $color="white" />
 
         <div className="container-events-cards">
           {eventData.satelliteEvents.map(event => (

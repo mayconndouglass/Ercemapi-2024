@@ -24,7 +24,6 @@ export const VideoSection = () => {
     <S.Container $openModal={openModal}>
       <Center>
         <Title align='center' text='Conheça Parnaíba' $color='#023E61' />
-        <Title align='left' text='Conheça Parnaíba' $color='#023E61' />
 
         <div
           className="video-container"

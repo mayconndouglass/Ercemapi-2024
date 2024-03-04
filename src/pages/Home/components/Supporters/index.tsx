@@ -7,7 +7,7 @@ import sbc from "../../../../assets/3.png"
 import ifpi2 from "../../../../assets/IFPI3.png"
 import uespi from "../../../../assets/2.png"
 import ufdpar2 from "../../../../assets/Design sem nome (1).png"
-import deltaTics from "../../../../assets/deltaTics.png"
+import deltaTics from "../../../../assets/Logo DeltaTICs.png"
 
 export const Supporters = () => {
   return (
@@ -15,7 +15,9 @@ export const Supporters = () => {
       <Center>
         <div className="holding ">
           <Title align="center" text="Realização" />
-          <img src={sbc} alt="Sbc" />
+          <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+            <img src={sbc} alt="Sbc" />
+          </a>
         </div>
 
         <div className="organization">
@@ -23,15 +25,22 @@ export const Supporters = () => {
 
           <div className="organizations">
             <div className="ifpi">
-              <img src={ifpi2} alt="IFPI" />
+              <a href="https://www.ifpi.edu.br/" target="_blank" rel="noopener noreferrer">
+                <img src={ifpi2} alt="IFPI" />
+              </a>
             </div>
 
             <div className="uespi">
-              <img src={uespi} alt="Uespi" />
+              <a href="https://uespi.br/" target="_blank" rel="noopener noreferrer">
+                <img src={uespi} alt="Uespi" />
+              </a>
             </div>
 
             <div className="ufdpar">
-              <img src={ufdpar2} alt="UFDPAR" />
+              <a href="https://ufdpar.edu.br/" target="_blank" rel="noopener noreferrer">
+                <img src={ufdpar2} alt="UFDPAR" />
+              </a>
+
             </div>
           </div>
         </div>
@@ -39,7 +48,9 @@ export const Supporters = () => {
         <div className="institutional-support">
           <Title text="Apoio Institucional" align="center" />
 
-          <img src={deltaTics} alt="Delta Tics" />
+          <a href="https://institutodeltatics.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src={deltaTics} alt="Delta Tics" />
+          </a>
         </div>
       </Center>
     </S.Container>
