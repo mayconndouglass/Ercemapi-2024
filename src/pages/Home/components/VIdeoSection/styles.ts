@@ -7,15 +7,21 @@ export const Container = styled.section<{ $openModal: boolean }>`
 
     h2 {
       margin-bottom: 5rem;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 2.5rem;
+      }
     }
   }
 
   .video-container {
     margin: 0 auto;
-    width: 90%;
-    height: 60vh;//220px;
-    border: 5px solid #fff;
+    /* width: 90%; */
+    height: 65vh;//220px;
+    border: 3px solid #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
     cursor: pointer;
 
@@ -116,7 +122,7 @@ export const Container = styled.section<{ $openModal: boolean }>`
       width: 70vw;
       height: 70vh;
 
-      transition: transform 30s ease-in-out;
+      /* transition: transform 30s ease-in-out; */
 
       @media screen and (max-width: 1380px) {
         width: 80%;

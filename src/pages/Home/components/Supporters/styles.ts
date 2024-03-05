@@ -80,6 +80,12 @@ export const Container = styled.section`
       h2 {
         margin: 2.5rem 0;
       }
+
+      .holding {
+        h2 {
+          margin: 0 0 2.5rem;
+        }
+      }
     }
   }
 `

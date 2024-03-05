@@ -10,6 +10,10 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
 
 
   @media screen and (max-width: 990px) {
+    padding: .5rem 5rem;
+  }
+
+  @media screen and (max-width: 700px) {
     padding: .5rem 2.5rem;
   }
 
@@ -33,7 +37,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
       width: 150px;//200px;
     }
 
-    & > a img:last-child {
+    & > a img {
       width: 40px;//50px;
     }
 
@@ -46,7 +50,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
         width: 110px;
       }
 
-      & > img:last-child {
+      & > a img {
         width: 35px;
       }
     }
@@ -60,7 +64,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
         width: 150px;
       }
 
-      & > img:last-child {
+      & > a img {
         width: 50px;
       }
     }
@@ -74,7 +78,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
         width: 110px;
       }
 
-      & > img:last-child {
+      & > a img {
         width: 35px;
       }
     }
@@ -84,7 +88,7 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
         width: 200px;
       }
 
-      & > img:nth-child(2),  & > img:last-child {
+      & > img:nth-child(2),  & > a img {
         display: none;
       }
     }
@@ -350,17 +354,10 @@ export const SideBar = styled.div<{
           }
 
           ul {
-            display: none;
-            position: static;
-            transform: scaleY(0);
-            visibility: hidden;
-            opacity: 0;
-            min-width: auto;
-            box-shadow: none;
-            padding: 0;
-            transition: initial;
-            transition: all .3s ease-in-out;
-
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease-out;
+           
             li {
               a {
                 padding: 5px 1rem;
@@ -369,13 +366,8 @@ export const SideBar = styled.div<{
           }
 
           .active {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-            transition: initial;
-            transition: all .3s ease-in-out;
-            transform: scaleY(1);
-            background-color:red;
+            max-height: 110px;
+            transition: max-height .4s ease-in-out;
           }
         }
       }

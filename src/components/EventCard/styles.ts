@@ -58,6 +58,8 @@ export const Container = styled.div`
     opacity: 0;
     visibility: hidden;
     background-color: ${({ theme }) => theme["blue-400"]};
+
+    transition:  all ease 0.5s;
   }
 
   &::before {
@@ -89,11 +91,11 @@ export const Container = styled.div`
     color: white;
     background-color: none;
 
-
     svg {
       /* top: -40px; */
+      background: transparent;
       transition:  all ease 0.5s;
-      transform: translateY(-10px);
+      transform: translateY(-8px);
       opacity: 0;
     }
   }
