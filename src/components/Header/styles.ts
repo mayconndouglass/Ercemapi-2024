@@ -22,6 +22,10 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+
+    @media screen and (max-width: 700px) {
+      gap: 1rem;
+    }
   }
 
   .logos {
@@ -46,54 +50,62 @@ export const Container = styled.header<{ $menuIsOpen: boolean, }>`
     }
 
     @media screen and (max-width: 1100px) {
-      img {
-        width: 160px;
+      .main-logo {
+        img {
+          width: 160px;
+        }
       }
 
       & > img:nth-child(2) {
         width: 110px;
       }
 
-      & > a img {
+      & > a .sbc-logo {
         width: 35px;
       }
     }
 
     @media screen and (max-width: 990px) {
-      img {
-        width: 200px;
+      .main-logo {
+        img {
+          width: 200px;
+        }
       }
 
       & > img:nth-child(2) {
         width: 150px;
       }
 
-      & > a img {
+      & > a .sbc-logo {
         width: 50px;
       }
     }
 
     @media screen and (max-width: 800px) {
-      img {
-        width: 160px;
+      .main-logo {
+        img {
+          width: 200px;
+        }
       }
 
       & > img:nth-child(2) {
         width: 110px;
       }
 
-      & > a img {
+      & > a .sbc-logo {
         width: 35px;
       }
     }
 
     @media screen and (max-width: 800px) {
-      img {
-        width: 200px;
+      & > img:nth-child(2),  & > a .sbc-logo {
+        display: none;
       }
 
-      & > img:nth-child(2),  & > a img {
-        display: none;
+      .main-logo {
+        img {
+          width: 200px;//250px;
+        }
       }
     }
 
