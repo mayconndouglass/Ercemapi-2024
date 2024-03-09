@@ -4,7 +4,10 @@ export const Container = styled.section`
   margin-bottom: 7.5rem;
   padding: 5rem 5rem;
   
- background-color: #0052A1;
+  background-color: #0052A1;
+  a {
+    text-decoration: none;
+  }
 
   & > div {
     padding-block: 2.5rem;//5rem;

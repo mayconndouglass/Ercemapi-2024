@@ -11,12 +11,14 @@ export const Signin = () => {
           <p>Faça sua inscrição como</p>
           <p>Voluntário(a) para a ERCEMAPI 2024!</p>
 
-          <AnimatedButton
-            $background="white"
-            title="SEJA UM VOLUNTÁRIO"
-            $padding={{ vertical: 0.5, horizontal: 1 }}
-            color='#023E61'
-          />
+          <a href="https://forms.gle/pTV3zrGszY7FbFb37" target="_blank" rel="noopener noreferrer">
+            <AnimatedButton
+              $background="white"
+              title="SEJA UM VOLUNTÁRIO"
+              $padding={{ vertical: 0.5, horizontal: 1 }}
+              color='#023E61'
+            />
+          </a>
         </div>
       </Center>
     </S.Container >

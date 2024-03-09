@@ -10,13 +10,13 @@ import { MdOutlinePlayCircle } from "react-icons/md";
 import parnaiba from "../../../../assets/parnaiba2.jpg"
 
 export const VideoSection = () => {
-  const [openModal, setopenModal] = useState<boolean>(false)
+  const [openModal, setOpenModal] = useState<boolean>(false)
 
   const handleOutSideModal = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     if (event.target === event.currentTarget) {
-      setopenModal(false)
+      setOpenModal(false)
     }
   }
 
@@ -27,7 +27,7 @@ export const VideoSection = () => {
 
         <div
           className="video-container"
-          onClick={() => setopenModal(true)}
+          onClick={() => setOpenModal(true)}
         >
           <img src={parnaiba} alt="Parnaíba" />
           <MdOutlinePlayCircle />
@@ -36,7 +36,7 @@ export const VideoSection = () => {
         <div className="modal-video" onClick={(event) => handleOutSideModal(event)}>
           {openModal && (
             <>
-              <span onClick={() => setopenModal(false)}>
+              <span onClick={() => setOpenModal(false)}>
                 <IoClose />
               </span>
               <iframe
