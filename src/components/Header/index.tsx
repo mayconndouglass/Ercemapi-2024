@@ -37,7 +37,7 @@ export const Header = () => {
               <a href="#">O Evento</a>
               <ul>
                 <li><Link to={"/sobre"}>Sobre</Link></li>
-                <li><a href="#">Organização</a></li>
+                <li><Link to={"/organizacao"}>Organização</Link></li>
                 <li><Link to={"/comite-de-programa"}>Comitê de Programa</Link></li>
               </ul>
             </li>
@@ -87,7 +87,7 @@ export const Header = () => {
                   <a href="#">O Evento <SlArrowDown /></a>
                   <ul className={eventOpen ? "active" : ""}>
                     <li><Link to={"/sobre"}>Sobre</Link></li>
-                    <li><a href="#">Organização</a></li>
+                    <li><Link to={"/organizacao"}>Organização</Link></li>
                     <li><Link to={"/comite-de-programa"}>Comitê de Programa</Link></li>
                   </ul>
                 </li>

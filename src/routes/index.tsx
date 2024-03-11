@@ -5,6 +5,7 @@ import { MainHeader } from '../layout/MainHeader'
 import { Home } from '../pages/Home';
 import { ProgramCommittee } from '../pages/ProgramCommittee';
 import { About } from '../pages/About';
+import { Organization } from '../pages/Organization';
 
 export const Router = () => {
   return (
@@ -13,6 +14,7 @@ export const Router = () => {
         <Route path="/" element={<Home />} />
         <Route path="/comite-de-programa" element={<ProgramCommittee />} />
         <Route path="/sobre" element={<About />} />
+        <Route path="/organizacao" element={<Organization />} />
       </Route>
 
       {/* <Route path="*" element={<NotFound />} /> */}
