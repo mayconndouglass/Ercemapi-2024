@@ -36,17 +36,17 @@ export const Header = () => {
             <li>
               <a href="#">O Evento</a>
               <ul>
-                <li><Link to={"/sobre"}>Sobre</Link></li>
-                <li><Link to={"/organizacao"}>Organização</Link></li>
-                <li><Link to={"/comite-de-programa"}>Comitê de Programa</Link></li>
+                <li><Link to={"/evento/sobre"}>Sobre</Link></li>
+                <li><Link to={"/evento/organizacao"}>Organização</Link></li>
+                <li><Link to={"/evento/comite-de-programa"}>Comitê de Programa</Link></li>
               </ul>
             </li>
             <li>
               <a href="#">Chamadas</a>
               <ul>
                 <li><a href="#">Artigos</a></li>
-                <li><a href="#">Minicursos</a></li>
-                <li><a href="#">Salão de Protótipos</a></li>
+                <li><Link to={"/chamadas/minicursos"}>Minicursos</Link></li>
+                <li><Link to={"/chamadas/salao-de-prototipos"}>Salão de Protótipos</Link></li>
               </ul>
             </li>
             <li><a href="#">Programação</a></li>
@@ -86,17 +86,17 @@ export const Header = () => {
                 <li onClick={() => setEventOpen(!eventOpen)}>
                   <a href="#">O Evento <SlArrowDown /></a>
                   <ul className={eventOpen ? "active" : ""}>
-                    <li><Link to={"/sobre"}>Sobre</Link></li>
-                    <li><Link to={"/organizacao"}>Organização</Link></li>
-                    <li><Link to={"/comite-de-programa"}>Comitê de Programa</Link></li>
+                    <li><Link to={"/evento/sobre"}>Sobre</Link></li>
+                    <li><Link to={"/evento/organizacao"}>Organização</Link></li>
+                    <li><Link to={"/evento/comite-de-programa"}>Comitê de Programa</Link></li>
                   </ul>
                 </li>
                 <li onClick={() => setcallsOpen(!callsOpen)}>
                   <a href="#">Chamadas <SlArrowDown /></a>
                   <ul className={callsOpen ? "active" : ""}>
                     <li><a href="#">Artigos</a></li>
-                    <li><a href="#">Minicursos</a></li>
-                    <li><a href="#">Salão de Protótipos</a></li>
+                    <li><Link to={"/chamadas/minicursos"}>Minicursos</Link></li>
+                    <li><Link to={"/chamadas/salao-de-prototipos"}>Salão de Protótipos</Link></li>
                   </ul>
                 </li>
                 <li><a href="#">Programação</a></li>
