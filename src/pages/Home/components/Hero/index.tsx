@@ -11,7 +11,7 @@ export const Hero = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (currentImage === 5) {
+      if (currentImage === 4) {
         setCurrentImage(0)
         return
       }
@@ -23,20 +23,24 @@ export const Hero = () => {
   }, [currentImage])
 
   return (
-    <S.Container backgroundImg={BackgroundImages[currentImage]}>
-      <Center>
-        <span >EVENTO HÍBRIDO</span>
-        <h1>XII Escola Regional de Computação do Ceará, Maranhão e Piauí</h1>
-        <p>Indústria 5.0 e o Futuro do Trabalho</p>
+    <>
+      <S.support />
 
-        <AnimatedButton
-          $background="#FFB510"
-          title="INSCRIÇÕES EM BREVE"
-          $padding={{ vertical: 1.25, horizontal: 2.4 }}
-          color='white'
-        />
-      </Center>
-      {/* <span></span> */}
-    </S.Container>
+      <S.Container backgroundImg={BackgroundImages[currentImage]}>
+        <Center>
+          <span >EVENTO HÍBRIDO</span>
+          <h1>XII Escola Regional de Computação do Ceará, Maranhão e Piauí</h1>
+          <p>Indústria 5.0 e o Futuro do Trabalho</p>
+
+          <AnimatedButton
+            $background="#FFB510"
+            title="INSCRIÇÕES EM BREVE"
+            $padding={{ vertical: 1.25, horizontal: 2.4 }}
+            color='white'
+          />
+        </Center>
+        {/* <span></span> */}
+      </S.Container>
+    </>
   )
 }

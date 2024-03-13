@@ -15,7 +15,7 @@ export const Container = styled.section<{ backgroundImg: string }>`
   background-size: cover;
   /* background-color: ${({ theme }) => theme["blue-400"]}; */
   /* position: relative; */
-  height: 100vh;//calc(100vh - 100px);
+  height: calc(100vh - 100px);
   margin-bottom: 10rem;
   position: relative;
   
@@ -158,5 +158,13 @@ export const Container = styled.section<{ backgroundImg: string }>`
         font-size: 1.5rem;
       }
     }
+  }
+`
+
+export const support = styled.div`
+  height: 100px;
+
+  @media screen and (max-width: 800px) {
+    height: 73px;
   }
 `

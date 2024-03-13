@@ -15,12 +15,11 @@ export const Articles = () => {
       <Separator />
       <S.Container>
         <Center>
-          <Title align="left" text="Artigos" />
+          <Title align="left" text="Chamada de Artigos" />
 
           <div className="line" />
 
           <div className="content">
-            <h6>Chamada de Artigos</h6>
             <p>
               A <strong>VIII Escola Regional de Computação Ceará, Maranhão, Piauí (ERCEMAPI 2024)</strong> tem como objetivo disseminar o conhecimento técnico e científico sobre temas e assuntos de vanguarda na área de Computação. A escola busca incentivar a produção, publicação e disseminação de material técnico, didático e científico de alta qualidade. É um fórum de integração entre coordenadores de curso, pesquisadores, alunos de graduação e pós-graduação, e representantes dos setores governamental, industrial e de serviços dos Estados do Piauí, Ceará, Maranhão e demais regiões.
             </p>

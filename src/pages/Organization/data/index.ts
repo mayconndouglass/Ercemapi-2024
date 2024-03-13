@@ -4,6 +4,8 @@ import img3 from "../../../assets/daviviana-last.png"
 import img4 from "../../../assets/foto_baluz-last.png"
 import img5 from "../../../assets/rodrigoveras-last.png"
 import img6 from "../../../assets/Alcemir-Santos-last.png"
+import img7 from "../../../assets/romuere.png"
+
 
 export const organizerDetails = [
   {
@@ -53,6 +55,6 @@ export const organizerDetails = [
     name: "ROMUERE RODRIGUES VELOSO E SILVA",
     title: "Coordenador de Minicursos",
     institution: "UFPI",
-    image: null
+    image: img7
   }
 ]

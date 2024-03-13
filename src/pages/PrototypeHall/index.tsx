@@ -9,12 +9,11 @@ export const PrototypeHall = () => {
       <Separator />
       <S.Container>
         <Center>
-          <Title align="left" text="Salão de Protótipos" />
+          <Title align="left" text="Chamada de Salão de Protótipos" />
 
           <div className="line" />
 
           <div className="content">
-            <h6>Chamada de Salão de Protótipos</h6>
             <p>
               O Salão de Protótipos da ERCEMAPI 2024 convida interessados a submeterem trabalhos nas áreas de Software as a Services (SaaS), aplicativos mobile, sistemas para WEB, jogos, sistemas embarcados, inteligência artificial, ferramentas de simulação, ferramentas para desenvolvimento, entre outras.
             </p>

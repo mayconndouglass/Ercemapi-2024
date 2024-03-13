@@ -17,7 +17,7 @@ export const Organization = () => {
       <Separator />
       <S.Container>
         <Center>
-          <Title align='center' text='Organização' />
+          <Title align='left' text='Organização' />
 
           <div className="organizers-container">
             {organizerDetails.map(organizer => (

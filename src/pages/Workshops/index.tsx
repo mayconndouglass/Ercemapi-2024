@@ -15,12 +15,11 @@ export const Workshops = () => {
       <Separator />
       <S.Container>
         <Center>
-          <Title align="left" text="Minicursos" />
+          <Title align="left" text="Chamada de Minicursos" />
 
           <div className="line" />
 
           <div className="content">
-            <h6>Chamada de Minicursos</h6>
             <p>
               A ERCEMAPI 2024 tem como objetivo disseminar o conhecimento técnico e científico sobre temas e assuntos de vanguarda na área de Computação, colaborar e contribuir com a consolidação dos Programas de Pós-Graduação e consolidar-se como um evento de referência nos Estados do Ceará, Maranhão e Piauí, e Região Nordeste.
             </p>
