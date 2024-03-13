@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Container = styled.section<{ backgroundImg: string }>`
   display: flex;
   align-items: center;
-  max-width: 1600px;
+  max-width: 1910px;
   margin: 0 auto;
 
   padding: 0 5rem 0;
@@ -15,10 +15,10 @@ export const Container = styled.section<{ backgroundImg: string }>`
   background-size: cover;
   /* background-color: ${({ theme }) => theme["blue-400"]}; */
   /* position: relative; */
-  height: calc(100vh - 100px);
+  height: 100vh;//calc(100vh - 100px);
   margin-bottom: 10rem;
   position: relative;
-
+  
   @media screen and (max-width: 650px) {
     padding: 0 2.5rem 0;
     height: 70vh;

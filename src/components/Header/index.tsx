@@ -86,17 +86,33 @@ export const Header = () => {
                 <li onClick={() => setEventOpen(!eventOpen)}>
                   <a href="#">O Evento <SlArrowDown /></a>
                   <ul className={eventOpen ? "active" : ""}>
-                    <li><Link to={"/evento/sobre"}>Sobre</Link></li>
-                    <li><Link to={"/evento/organizacao"}>Organização</Link></li>
-                    <li><Link to={"/evento/comite-de-programa"}>Comitê de Programa</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}>
+                      <Link to={"/evento/sobre"}>Sobre</Link>
+                    </li>
+
+                    <li onClick={() => setIsOpen(!isOpen)}>
+                      <Link to={"/evento/organizacao"}>Organização</Link>
+                    </li>
+
+                    <li onClick={() => setIsOpen(!isOpen)}>
+                      <Link to={"/evento/comite-de-programa"}>Comitê de Programa</Link>
+                    </li>
                   </ul>
                 </li>
                 <li onClick={() => setcallsOpen(!callsOpen)}>
                   <a href="#">Chamadas <SlArrowDown /></a>
                   <ul className={callsOpen ? "active" : ""}>
-                    <li><Link to={"/chamadas/artigos"}>Artigos</Link></li>
-                    <li><Link to={"/chamadas/minicursos"}>Minicursos</Link></li>
-                    <li><Link to={"/chamadas/salao-de-prototipos"}>Salão de Protótipos</Link></li>
+                    <li onClick={() => setIsOpen(!isOpen)}>
+                      <Link to={"/chamadas/artigos"}>Artigos</Link>
+                    </li>
+
+                    <li onClick={() => setIsOpen(!isOpen)}>
+                      <Link to={"/chamadas/minicursos"}>Minicursos</Link>
+                    </li>
+
+                    <li onClick={() => setIsOpen(!isOpen)}>
+                      <Link to={"/chamadas/salao-de-prototipos"}>Salão de Protótipos</Link>
+                    </li>
                   </ul>
                 </li>
                 <li><a href="#">Programação</a></li>

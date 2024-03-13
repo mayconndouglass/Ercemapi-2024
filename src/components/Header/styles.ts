@@ -1,14 +1,13 @@
 import styled, { css } from 'styled-components'
 
-export const Container = styled.header<{ $menuIsOpen: boolean, }>`
+export const Container = styled.header<{ $menuIsOpen: boolean }>`
   padding: 0 5rem;
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
   color: ${({ theme }) => theme['blue-600']};
   background-color: white;
   z-index: 5;
-
-
+  
   @media screen and (max-width: 990px) {
     padding: .5rem 5rem;
   }
