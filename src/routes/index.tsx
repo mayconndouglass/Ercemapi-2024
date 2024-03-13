@@ -8,6 +8,7 @@ import { About } from '../pages/About';
 import { Organization } from '../pages/Organization';
 import { Workshops } from '../pages/Workshops';
 import { PrototypeHall } from '../pages/PrototypeHall';
+import { Articles } from '../pages/Articles';
 
 export const Router = () => {
   return (
@@ -21,6 +22,7 @@ export const Router = () => {
 
         <Route path="/chamadas/minicursos" element={<Workshops />} />
         <Route path="/chamadas/salao-de-prototipos" element={<PrototypeHall />} />
+        <Route path="/chamadas/artigos" element={<Articles />} />
       </Route>
 
       {/* <Route path="*" element={<NotFound />} /> */}

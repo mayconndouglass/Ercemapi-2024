@@ -1,5 +1,6 @@
 import * as S from "./styles"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 import { Center } from "../Center"
 import { AnimatedButton } from "../AnimatedButton"
@@ -11,7 +12,6 @@ import { SlArrowDown } from "react-icons/sl"
 import ercemapi from "../../assets/Ercemapi 2020.png"
 import enucompi from "../../assets/Logo ENUCOMPI.png"
 import sbc from "../../assets/logosbc.png"
-import { Link } from "react-router-dom"
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -44,7 +44,7 @@ export const Header = () => {
             <li>
               <a href="#">Chamadas</a>
               <ul>
-                <li><a href="#">Artigos</a></li>
+                <li><Link to={"/chamadas/artigos"}>Artigos</Link></li>
                 <li><Link to={"/chamadas/minicursos"}>Minicursos</Link></li>
                 <li><Link to={"/chamadas/salao-de-prototipos"}>Salão de Protótipos</Link></li>
               </ul>
@@ -94,7 +94,7 @@ export const Header = () => {
                 <li onClick={() => setcallsOpen(!callsOpen)}>
                   <a href="#">Chamadas <SlArrowDown /></a>
                   <ul className={callsOpen ? "active" : ""}>
-                    <li><a href="#">Artigos</a></li>
+                    <li><Link to={"/chamadas/artigos"}>Artigos</Link></li>
                     <li><Link to={"/chamadas/minicursos"}>Minicursos</Link></li>
                     <li><Link to={"/chamadas/salao-de-prototipos"}>Salão de Protótipos</Link></li>
                   </ul>
