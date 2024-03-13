@@ -41,7 +41,7 @@ export const Container = styled.section`
       p {
         /* color: ${({ theme }) => theme["blue-600"]}; */
         color: #042471;
-        font-size: 1rem;
+        font-size: 1.125rem;//1rem;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         line-height: 26px;

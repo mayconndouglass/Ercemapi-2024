@@ -28,6 +28,7 @@ export const Container = styled.section<{ $openModal: boolean }>`
         font-weight: 400;
         line-height: 26px;
         margin-bottom: 1rem;
+        color: #292930;
       }
     }
 

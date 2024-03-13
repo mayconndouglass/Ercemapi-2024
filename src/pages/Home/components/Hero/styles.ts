@@ -1,20 +1,21 @@
 import styled from "styled-components"
 
-import background from "../../../../assets/backgroundParnaiba.jpg"
-
-export const Container = styled.section`
+export const Container = styled.section<{ backgroundImg: string }>`
   display: flex;
   align-items: center;
   max-width: 1600px;
   margin: 0 auto;
 
   padding: 0 5rem 0;
-  background-image: url("${background}");
+  background-image: url(
+    ${props => props.backgroundImg}
+  );
+  transition: background-image .5s ease;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
   /* background-color: ${({ theme }) => theme["blue-400"]}; */
   /* position: relative; */
-  height: 100vh;
+  height: calc(100vh - 100px);
   margin-bottom: 10rem;
   position: relative;
 
@@ -38,7 +39,7 @@ export const Container = styled.section`
     transition: ease opacity 300ms 100ms;
 
     background: linear-gradient(180deg, rgba(182, 124, 28, 1) 0%, rgba(6, 35, 112, 1) 50%);
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   & > span {
