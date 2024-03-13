@@ -6,6 +6,7 @@ import { Home } from '../pages/Home';
 import { ProgramCommittee } from '../pages/ProgramCommittee';
 import { About } from '../pages/About';
 import { Organization } from '../pages/Organization';
+import { Workshops } from '../pages/Workshops';
 
 export const Router = () => {
   return (
@@ -13,8 +14,9 @@ export const Router = () => {
       <Route path="/" element={<MainHeader />}>
         <Route path="/" element={<Home />} />
         <Route path="/comite-de-programa" element={<ProgramCommittee />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/organizacao" element={<Organization />} />
+        <Route path="/evento/sobre" element={<About />} />
+        <Route path="/evento/organizacao" element={<Organization />} />
+        <Route path="/chamadas/minicursos" element={<Workshops />} />
       </Route>
 
       {/* <Route path="*" element={<NotFound />} /> */}
