@@ -6,10 +6,19 @@ import { AnimatedButton } from "../../../../components/AnimatedButton"
 
 import { BackgroundImages } from "./data/background-images"
 
+const preLoadImages = () => {
+  BackgroundImages.forEach(imageUrl => {
+    const img = new Image();
+    img.src = imageUrl
+  })
+}
+
 export const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0)
 
   useEffect(() => {
+    preLoadImages()
+
     const timer = setTimeout(() => {
       if (currentImage === 4) {
         setCurrentImage(0)
