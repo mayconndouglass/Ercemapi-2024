@@ -18,6 +18,7 @@ export const Container = styled.section<{ backgroundImg: string }>`
   height: calc(100vh - 100px);
   margin-bottom: 10rem;
   position: relative;
+  background-position: center bottom;
   
   @media screen and (max-width: 650px) {
     padding: 0 2.5rem 0;
