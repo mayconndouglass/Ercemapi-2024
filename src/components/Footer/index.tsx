@@ -36,7 +36,11 @@ export const Footer = () => {
 
           <div className="contact">
             <div className="insta">
-              <a href=" https://instagram.com/ercemapi2024.enucompi" target="_blank" rel="noopener noreferrer">
+              <a
+                href=" https://instagram.com/ercemapi2024.enucompi"
+                target="_blank" rel="noopener noreferrer"
+                aria-label="Acesse o instagram da ERCEMAPI"
+              >
                 <FaInstagram />
                 /ercemapi2024.enucompi
               </a>
@@ -66,7 +70,12 @@ export const Footer = () => {
 
               <li>
                 <SlArrowRight />
-                <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.sbc.org.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Conheça a SBC"
+                >
                   Conheça a SBC
                 </a>
               </li>

@@ -1,28 +1,33 @@
 import styled from "styled-components"
-import image from "../../assets/card-background1.avif"
 
-export const Container = styled.div`
+export const Container = styled.div<{
+  $backgroundImg: string,
+  $color: string
+}>`
+
   display: inline-block;
   padding: 3.5rem;
-  border-radius: 8px;
-  border: 2px solid ${({ theme }) => theme["blue-600"]};
+  border: 2px solid ${props => props.$color === "blue" ? props.theme["blue-600"] : "white"};
   position: relative;
-  color: ${({ theme }) => theme["blue-600"]};
+
+  color: ${props => props.$color === "blue" ? props.theme["blue-600"] : "white"};
   font-size: 1.125rem;
-  background-image: none;
   
+  background-image: url(${props => props.$backgroundImg});
+  background-repeat: no-repeat;
+  background-size: cover;
   
   margin-bottom: 1.875rem;
-  border-radius: 6px;
-  transition:  all ease 0.7s;
-  background-color: white;
+  border-radius: 8px;
+  transition:  all ease 0.3s;
 
   width: 250px;
   text-align: center;
+  z-index: 1;
 
   h5 {
     position: relative;
-    z-index: 1;
+    z-index: 3;
   }
 
   svg {
@@ -36,12 +41,12 @@ export const Container = styled.div`
     font-weight: ${props => props.theme['font-w-medium']};
     line-height: 1.3;
     color: ${props => props.theme['gray-500']};
-    background: ${props => props.theme.white};
+    background: ${props => props.$color === "blue" ? "white" : props.theme["blue-400"]};
     z-index: 4;
 
     width: 60px;
     height: 40px;
-    fill: ${({ theme }) => theme["blue-600"]};
+    fill: ${props => props.$color === "blue" ? props.theme["blue-600"] : "white"};
     transition:  all ease 0.5s;
 
     opacity: 1;
@@ -54,49 +59,47 @@ export const Container = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 0  ;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     background-color: ${({ theme }) => theme["blue-400"]};
+    background-color: ${props => props.$color === "blue" ? "white" : props.theme["blue-400"]};
+    border-radius: 8px;
 
-    transition:  all ease 0.5s;
+    transition:  all ease 0.3s;
+    z-index: 2;
   }
 
   &::before {
-    content: "";
+    /* content: ""; */
     height: 100%;
     width: 90%;
     
     border-radius: 8px;
-    border: 3px solid ${({ theme }) => theme["blue-600"]};
-    border: 2px solid #f1f1f1;
+    border: 2px solid #EDEDED;
+    /* border: 2px solid #f1f1f1; */
     
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: -1;
+
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease-in-out;
+    z-index: -1;
   }
 
   &:hover {
-    box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.1);
-    background-image: url(${image});
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all ease 0.3s;
+    box-shadow: 0px 16px 32px 0 rgba(0, 0, 0, 0.15);
     color: white;
-    background-color: none;
+    transition:  all ease 0.3s;
 
     svg {
-      /* top: -40px; */
       background: transparent;
       transition:  all ease 0.5s;
-      transform: translateY(-8px);
-      opacity: 0;
+      transform: translateY(-16px);
+      /* opacity: 0; */
     }
   }
 
@@ -109,7 +112,9 @@ export const Container = styled.div`
   &:hover::after {
     visibility: visible;
     opacity: 0.8;
-    transition:  all ease 0.5s;
+    transition:  all ease 0.3s;
+
+    background-color: ${({ theme }) => theme["blue-400"]};
   }
 
   @media screen and (max-width: 900px) {

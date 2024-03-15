@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 export const Container = styled.section<{ $openModal: boolean }>`
   padding: 2.5rem 5rem 7.5rem;
+  max-width: 1900px;
+  margin: 0 auto;
 
   @media screen and (max-width: 700px) {
     padding: 2.5rem 2.5rem 5rem;
@@ -51,13 +53,13 @@ export const Container = styled.section<{ $openModal: boolean }>`
       img {
         width: 100%;
         object-fit: cover;
-        transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
         border-radius: 8px;
-        transition: .10s linear;
+        /* transition: .10s linear; */
 
         &:hover {
           transform: scale(1.2);
-          transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition: transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
       }
 

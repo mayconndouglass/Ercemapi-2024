@@ -1,9 +1,9 @@
-import image1 from '../../../assets/DSCN4835.jpeg'
-import image2 from '../../../assets/DSCN4811.jpeg'
-import image3 from '../../../assets/DSCN4795.jpeg'
-import image4 from '../../../assets/DSCN4662.jpeg'
-import image5 from '../../../assets/DSCN4649.jpeg'
-import image6 from '../../../assets/DSCN4636.jpeg'
+import image1 from '../../../assets/sobre1.webp'
+import image2 from '../../../assets/sobre2.webp'
+import image3 from '../../../assets/sobre3.webp'
+import image4 from '../../../assets/sobre4.webp'
+import image5 from '../../../assets/sobre5.webp'
+import image6 from '../../../assets/sobre6.webp'
 
 export const images = [
   {

@@ -1,7 +1,7 @@
 import * as S from "./styles"
 import { Center } from "../../../../components/Center"
 
-import ufdpar from "../../../../assets/ufdpar2.png"
+import ufdpar from "../../../../assets/ufdpar2.webp"
 
 import { FaMapMarkerAlt } from "react-icons/fa"
 import { FaCalendarAlt } from "react-icons/fa"

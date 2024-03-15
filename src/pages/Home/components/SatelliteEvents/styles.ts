@@ -20,10 +20,10 @@ export const Container = styled.section`
         color: white;
       }
 
-      svg {
+     /*  svg {
         fill: white;
         background-color: ${({ theme }) => theme["blue-400"]};
-      }
+      } */
     }
 
     & > div:first-child {

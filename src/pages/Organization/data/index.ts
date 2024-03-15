@@ -33,7 +33,7 @@ export const organizerDetails = [
     id: 4,
     name: "RODRIGO AUGUSTO ROCHA SOUZA BALUZ",
     title: "Coordenador Geral",
-    institution: "UFPI",
+    institution: "UESPI",
     image: img4
   },
   {
@@ -47,7 +47,7 @@ export const organizerDetails = [
     id: 6,
     name: "ALCEMIR RODRIGUES SANTOS",
     title: "Coordenador do Salão de Protótipos",
-    institution: "UFPI",
+    institution: "UESPI",
     image: img6
   },
   {

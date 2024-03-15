@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   padding: 2.5rem 5rem 7.5rem;
+  max-width: 1900px;
+  margin: 0 auto;
 
   @media screen and (max-width: 990px) {
     padding: 2.5rem 2.5rem 7.5rem;

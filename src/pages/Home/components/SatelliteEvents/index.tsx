@@ -14,7 +14,13 @@ export const SatelliteEvents = () => {
 
         <div className="container-events-cards">
           {eventData.satelliteEvents.map(event => (
-            <EventCard icon={event.icon} text={event.text} key={event.id} />
+            <EventCard
+              key={event.id}
+              icon={event.icon}
+              text={event.text}
+              image={event.image}
+              color="white"
+            />
           ))}
         </div>
       </Center>

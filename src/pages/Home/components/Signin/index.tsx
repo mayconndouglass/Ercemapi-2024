@@ -8,8 +8,8 @@ export const Signin = () => {
     <S.Container>
       <Center>
         <div className="content">
-          <p>Faça sua inscrição como</p>
-          <p>Voluntário(a) para a ERCEMAPI 2024!</p>
+          <p>Faça sua inscrição como voluntário(a)</p>
+          <p>para a ERCEMAPI 2024!</p>
 
           <a href="https://forms.gle/pTV3zrGszY7FbFb37" target="_blank" rel="noopener noreferrer">
             <AnimatedButton

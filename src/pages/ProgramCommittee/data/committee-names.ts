@@ -122,21 +122,21 @@ export const CommitteeNames = [
   {
     "id": 25,
     "name": "DR. EYDER FRANCO SOUSA RIOS",
-    "institution": "Universidade Estadual do Piauí (UFPI)"
+    "institution": "Universidade Estadual do Piauí (UESPI)"
   },
   {
     "id": 26,
     "name": "DR. FABBIO ANDERSON SILVA BORGES",
-    "institution": "Universidade Estadual do Piauí (UFPI)"
+    "institution": "Universidade Estadual do Piauí (UESPI)"
   },
   {
     "id": 27,
     "name": "DR. JOSE VIGNO MOURA SOUSA",
-    "institution": "Universidade Estadual do Piauí (UFPI)"
+    "institution": "Universidade Estadual do Piauí (UESPI)"
   },
   {
     "id": 28,
     "name": "DR. ATILA RABELO LOPES",
-    "institution": "Universidade Estadual do Piauí (UFPI)"
+    "institution": "Universidade Estadual do Piauí (UESPI)"
   }
 ]
